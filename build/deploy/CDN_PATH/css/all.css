@@ -634,7 +634,12 @@ body {
 .pageContainer {
   min-height: 100%;
   margin-bottom: -70px;
-  margin-top: 138px;
+  background-color: #f8f8f8;
+}
+
+/* line 25, ../../../scss/base/_default.scss */
+.contentContainer {
+  padding-top: 138px;
 }
 
 /* ANCHORS & BUTTONS
@@ -651,12 +656,6 @@ body {
 --------------------------------------------------------------------- */
 /* VIEWS
 ---------------------------------------------------------------------- */
-/* line 1, ../../../scss/page/_home.scss */
-.home-content {
-  height: 1400px;
-  background-color: #f8f8f8;
-}
-
 /* MODULES
 --------------------------------------------------------------------- */
 /* line 1, ../../../scss/modules/_shell.scss */

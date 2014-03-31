@@ -20,10 +20,11 @@ body {
 .pageContainer {
 	min-height: 100%;
 	margin-bottom: $footerHeightPage;
-	margin-top: $shellHeight; 
+	background-color: $pageBgColor;
 }
 .contentContainer { 
-	
+
+	padding-top:$shellHeight;
 }
 
 /* ANCHORS & BUTTONS
