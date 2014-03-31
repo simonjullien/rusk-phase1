@@ -1,0 +1,112 @@
+/* OVERIDE STYLES FOR STYLE TILE INTERFACE ONLY
+-------------------------------------------------------------- */
+
+body {
+    padding:57px 0px 40px 0px !important;
+    margin:0px !important;
+}
+
+.styleTile_container {
+    width:90%;
+    max-width:900px;
+    margin:0px auto;
+}
+
+/* HEADER BAR
+-------------------------------------------------------------- */
+
+.styleTile_header {
+    top:0px;
+    position:fixed;
+    height:18px;
+    padding:18px 0px 16px 0px;
+    width:100%;
+    background:#252525;
+    color:#ccc;
+    font-family:helvetica, arial, sans-serif;
+    line-height:1em;
+    font-size:16px;
+} 
+.styleTile_header strong {
+    font-weight:bold;
+    color:#fff;
+    padding-right:10px;
+    font-size:18px;
+}
+
+/* ELEMENT DOCUMENTATION
+-------------------------------------------------------------- */
+
+.styleTile_element {
+    padding:30px 0px 20px 0px;
+}
+.styleTile_title {
+    font-family:helvetica, arial, sans-serif;
+    font-size:24px;
+    padding:0px 0px 9px 0px;
+    margin:0px;
+    font-weight:bold;
+}
+.styleTile_notes {
+    font-family:helvetica, arial, sans-serif;
+    font-size:14px;
+    line-height:1.5em;
+    padding:0px 0px 9px 0px;
+    margin:0px;
+    font-weight:normal;
+}
+.styleTile_notes p {
+    margin:0px;
+    padding:0px 0px 9px 0px;
+}
+.styleTile_notes a {
+    color:#3196fc;
+    text-decoration:underline;
+}
+.styleTile_exampleLabel {
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:14px;
+    color:#ababab;
+    background:#f7f7f9;
+    border:solid 1px #dddddd;
+    border-top-right-radius:5px;
+    border-top-left-radius:5px;
+    padding:10px 20px 10px 20px;
+    margin:9px 0px 0px 0px;
+    font-family:helvetica, arial, sans-serif;
+}
+.styleTile_example {
+    border:solid 1px #dddddd;
+    border-radius:5px;
+    padding:20px;   
+}
+.styleTile_exampleLabel + .styleTile_example {
+    border-top-right-radius:0px;
+    border-top-left-radius:0px;
+    border-top-width:0px;
+}
+
+/* REVERSE COLOUR VERSION
+-------------------------------------------------------------- */
+
+.styleTile_exampleLabel.is-reverse {
+    background:#555;
+    border-width:0px;
+    color:#c1c1c1;
+}
+.styleTile_example.is-reverse {
+    background:#252525;
+    border-width:0px;
+}
+.styleTile_example.is-reverse p {
+    color:#fff;
+}
+
+/* ELEMENT DOCUMENTATION
+-------------------------------------------------------------- */
+
+.styleTile_iconExample .iconsize-1 { font-size:120px; }
+.styleTile_iconExample .iconsize-2 { font-size:80px; }
+.styleTile_iconExample .iconsize-3 { font-size:50px; padding-left:5px; }
+.styleTile_iconExample .iconsize-4 { font-size:30px; padding-left:5px; }

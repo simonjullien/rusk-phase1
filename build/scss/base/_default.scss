@@ -1,0 +1,117 @@
+/* IMPORTS
+---------------------------------------------------------------------- */
+
+
+/* DOCUMENT
+---------------------------------------------------------------------- */
+
+html {
+	min-height:100%;
+	padding:0;
+	margin:0;
+}
+
+body {
+	min-height:100%;
+	padding:0;
+	margin:0;
+}
+
+.test-btn{
+	width: 24px;
+	height: 24px;
+	background-color: red;
+}
+
+/* BASIC STICKY FOOTER SETUP
+---------------------------------------------------------------------- */
+
+.pageContainer {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+}
+.contentContainer { 
+	min-height:100%;
+	//background-color:#f7f5fa;
+	position:relative;
+}
+
+/* ANCHORS & BUTTONS
+---------------------------------------------------------------------- */
+
+button:hover,
+button:active,
+button {
+}
+
+a, a:visited {
+	
+}
+
+a:hover {
+	
+}
+
+/* HEADINGS
+---------------------------------------------------------------------- */
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+h5 {
+  
+}
+
+h6 {
+  
+}
+
+
+/* TEXT
+---------------------------------------------------------------------- */
+
+p {
+
+}
+
+em {
+
+}
+
+strong {
+
+}
+
+/* HORIZONTAL RULE
+---------------------------------------------------------------------- */
+
+hr {
+  
+}
+
+/* FORM ELEMENTS
+---------------------------------------------------------------------- */
+
+input[type=text] {
+  
+}
+
+textarea {
+  
+}
+
+label {
+  
+}
