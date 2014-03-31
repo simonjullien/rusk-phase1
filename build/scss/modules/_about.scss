@@ -1,0 +1,16 @@
+.left-arrow{
+	@include sprite(left_arrow_about);
+	@extend %inline-block;
+	cursor:pointer;
+}
+
+.right-arrow{
+	@include sprite(right_arrow_about);
+	@extend %inline-block;
+	cursor:pointer;
+}
+
+.content-transition{
+	//position: absolute;
+	text-align: center;
+}

@@ -1,5 +1,8 @@
-/* IMPORTS ONLY - Don't put any css in here */
+/* COMPASS
+---------------------------------------------------------------------- */
 /* BASE
+---------------------------------------------------------------------- */
+/* SETTINGS
 ---------------------------------------------------------------------- */
 /* TEXT COLOURS
 ---------------------------------------------------------------------- */
@@ -640,6 +643,7 @@ body {
 /* line 25, ../../../scss/base/_default.scss */
 .contentContainer {
   padding-top: 138px;
+  min-height: 100%;
 }
 
 /* ANCHORS & BUTTONS
@@ -654,10 +658,32 @@ body {
 ---------------------------------------------------------------------- */
 /* UTILITIES
 --------------------------------------------------------------------- */
+/* line 13, ../../../scss/utilities/_inline-block.scss */
+.left-arrow, .right-arrow {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+
 /* VIEWS
 ---------------------------------------------------------------------- */
+/* line 1, ../../../scss/page/_home.scss */
+.home-content {
+  height: 400px;
+}
+
 /* MODULES
 --------------------------------------------------------------------- */
+/* line 1, ../../../scss/modules/_global.scss */
+.page-title {
+  font-size: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+
 /* line 1, ../../../scss/modules/_shell.scss */
 .site-footer {
   height: 70px;
@@ -683,4 +709,51 @@ body {
   width: 100%;
   height: 88px;
   background-color: white;
+}
+
+/* line 1, ../../../scss/modules/_about.scss */
+.left-arrow {
+  background-image: url('/CDN_PATH/img/generated/sprites-s35229c7b44.png');
+  background-position: 0 -12px;
+  background-repeat: no-repeat;
+  height: 64px;
+  width: 64px;
+  cursor: pointer;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+  /* line 20, ../../../scss/utilities/_sprite.scss */
+  .left-arrow {
+    background-image: url('/CDN_PATH/img/generated/sprites-retina-s8494a1a9f9.png');
+    background-position: 0 -12px;
+    -webkit-background-size: 64px, auto;
+    -moz-background-size: 64px, auto;
+    -o-background-size: 64px, auto;
+    background-size: 64px, auto;
+  }
+}
+
+/* line 7, ../../../scss/modules/_about.scss */
+.right-arrow {
+  background-image: url('/CDN_PATH/img/generated/sprites-s35229c7b44.png');
+  background-position: 0 -76px;
+  background-repeat: no-repeat;
+  height: 64px;
+  width: 64px;
+  cursor: pointer;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+  /* line 20, ../../../scss/utilities/_sprite.scss */
+  .right-arrow {
+    background-image: url('/CDN_PATH/img/generated/sprites-retina-s8494a1a9f9.png');
+    background-position: 0 -76px;
+    -webkit-background-size: 64px, auto;
+    -moz-background-size: 64px, auto;
+    -o-background-size: 64px, auto;
+    background-size: 64px, auto;
+  }
+}
+
+/* line 13, ../../../scss/modules/_about.scss */
+.content-transition {
+  text-align: center;
 }

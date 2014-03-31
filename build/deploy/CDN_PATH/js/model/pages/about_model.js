@@ -1,13 +1,35 @@
 define(
 	[
-	"backbone"
+	"backbone",
+	"text!templates/modules/about/about_history.hbs",
+	"text!templates/modules/about/about_people.hbs",
+	"text!templates/modules/about/about_today.hbs"
 	],function (
-		Backbone
+		Backbone,
+		TemplateHistory,
+		TemplatePeople,
+		TemplateToday
 	) {
 	var PageModel = Backbone.Model.extend({
 
-		initialize: function() {
+		templateList:null,
+		indexTp:0,
 
+		initialize: function() {
+			this.templateList = [TemplateHistory,TemplatePeople,TemplateToday];
+		},
+
+		setIndexTp:function(ind){
+			this.indexTp = ind;
+			this.trigger('about:index:change');
+		},
+
+		getIndexTp:function(){
+			return this.indexTp;
+		},
+
+		getTemplateList:function(){
+			return this.templateList;
 		}
 	});
 

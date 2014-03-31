@@ -8,7 +8,7 @@ sass_dir = "scss"
 images_dir = "/deploy/CDN_PATH/img"
 fonts_dir = "CDN_PATH/fonts"
 generated_images_dir = "/deploy/CDN_PATH/img/generated"
-http_generated_images_path = "CDN_PATH/img/generated"
+http_generated_images_path = "/CDN_PATH/img/generated"
 javascripts_dir = "deploy/CDN_PATH/js"
 
 # You can select your preferred output style here (can be overridden via the command line):

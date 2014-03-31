@@ -24,9 +24,6 @@ define([
 			var offsetX = (overflow) / 2;
 			var offsetY = (scale * originalHeight) / 2;
 
-
-
-
 			div.css("left", offsetX);
 			div.css("transform", scaleString);
 			div.css("margin-top", -offsetY);

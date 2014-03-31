@@ -1,4 +1,9 @@
-/* IMPORTS ONLY - Don't put any css in here */
+/* COMPASS
+---------------------------------------------------------------------- */
+@import "compass/css3";
+@import "compass/utilities/sprites";
+@import "compass/css3/user-interface";
+
 
 /* BASE
 ---------------------------------------------------------------------- */
@@ -10,9 +15,11 @@
 
 /* UTILITIES
 --------------------------------------------------------------------- */
+@import "utilities/positioning";
 @import "utilities/inline-block";
 @import "utilities/ir";
 @import "utilities/sprite";
+@import "utilities/vertical-center";
 
 /* VIEWS
 ---------------------------------------------------------------------- */
@@ -25,4 +32,6 @@
 
 /* MODULES
 --------------------------------------------------------------------- */
+@import "modules/global";
 @import "modules/shell";
+@import "modules/about";

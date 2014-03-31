@@ -22,9 +22,9 @@ body {
 	margin-bottom: $footerHeightPage;
 	background-color: $pageBgColor;
 }
-.contentContainer { 
-
-	padding-top:$shellHeight;
+.contentContainer {
+	padding-top: $shellHeight;
+	min-height: 100%;
 }
 
 /* ANCHORS & BUTTONS
