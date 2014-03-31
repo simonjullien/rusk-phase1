@@ -23,7 +23,9 @@ define([
     return BaseView.extend({
 
         transitioner:null,
+        shell:null,
         $rootNode:null,
+        $shellNode:null,
 
         initialize: function() {
             
@@ -31,7 +33,9 @@ define([
 
         start:function(){
             this.$rootNode = $('#rootNode');
+            this.$shellNode = $('#shellNode');
             this.transitioner = new Transitioner({el:this.$rootNode});
+            this.shell = new Shell({el:this.$shellNode});
             this.addEvents();
         },
 

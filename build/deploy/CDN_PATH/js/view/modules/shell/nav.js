@@ -26,7 +26,7 @@ define([
 
         initialize: function() {
             var allNavigation = AppModel.getNavigationModel().getAllRoutes();
-            this.compileAndAppendTemplate(Template,{'navigation':allNavigation});
+            Utils.compileAndAppendTemplate(Template,{'navigation':allNavigation},this,false);
         },
 
         render: function() {}

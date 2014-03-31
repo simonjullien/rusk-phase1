@@ -1,0 +1,24 @@
+.site-footer {
+  height: $footerHeight;
+  background-color: red;
+}
+
+.shellContainer{
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height: $shellHeight;
+
+	.header-container{
+		width: 100%;
+		height: $headerHeight;
+		background-color: black;
+	}
+
+	.nav-container{
+		width: 100%;
+		height: $navHeight;
+		background-color: white;
+	}
+}
