@@ -701,9 +701,35 @@ body {
   margin-left: -350px;
 }
 
+/* line 1, ../../../scss/page/_contact.scss */
+.contact-content {
+  min-height: 750px;
+  width: 100%;
+}
+
 /* line 1, ../../../scss/page/_home.scss */
 .home-content {
-  height: 400px;
+  min-height: 750px;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 1, ../../../scss/page/_news.scss */
+.news-content {
+  min-height: 750px;
+  width: 100%;
+}
+
+/* line 1, ../../../scss/page/_products.scss */
+.products-content {
+  min-height: 750px;
+  width: 100%;
+}
+
+/* line 1, ../../../scss/page/_search.scss */
+.search-content {
+  min-height: 750px;
+  width: 100%;
 }
 
 /* MODULES
