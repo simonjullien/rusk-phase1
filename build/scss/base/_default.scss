@@ -6,30 +6,36 @@
 ---------------------------------------------------------------------- */
 
 html {
-	height:100%;
+	min-height:100%;
 	padding:0;
 	margin:0;
 }
 
 body {
-	height:100%;
+	min-height:100%;
 	padding:0;
 	margin:0;
 }
 
 .pageContainer {
-	min-height: 100%;
-	margin-bottom: $footerHeightPage;
+	position: relative;
+	width: 100%;
+	top:$shellHeight;
 	background-color: $pageBgColor;
 }
 .contentContainer {
-	padding-top: $shellHeight;
-	min-height: 100%;
+	position: relative;
+	background-color: $pageBgColor;
+	height: 100%;
 }
 
 .site-footer{
+	position: relative;
 	height: $footerHeight;
-	margin-top: $footerHeight;
+	position: relative;
+	z-index: $footerZindex;
+	background-color: white;
+	//bottom: 0;
 }
 
 /* ANCHORS & BUTTONS

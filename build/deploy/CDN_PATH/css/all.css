@@ -621,35 +621,40 @@ table {
 ---------------------------------------------------------------------- */
 /* line 8, ../../../scss/base/_default.scss */
 html {
-  height: 100%;
+  min-height: 100%;
   padding: 0;
   margin: 0;
 }
 
 /* line 14, ../../../scss/base/_default.scss */
 body {
-  height: 100%;
+  min-height: 100%;
   padding: 0;
   margin: 0;
 }
 
 /* line 20, ../../../scss/base/_default.scss */
 .pageContainer {
-  min-height: 100%;
-  margin-bottom: -70px;
+  position: relative;
+  width: 100%;
+  top: 138px;
   background-color: #f8f8f8;
 }
 
-/* line 25, ../../../scss/base/_default.scss */
+/* line 26, ../../../scss/base/_default.scss */
 .contentContainer {
-  padding-top: 138px;
-  min-height: 100%;
+  position: relative;
+  background-color: #f8f8f8;
+  height: 100%;
 }
 
-/* line 30, ../../../scss/base/_default.scss */
+/* line 32, ../../../scss/base/_default.scss */
 .site-footer {
+  position: relative;
   height: 70px;
-  margin-top: 70px;
+  position: relative;
+  z-index: 500;
+  background-color: white;
 }
 
 /* ANCHORS & BUTTONS
@@ -678,6 +683,7 @@ body {
 ---------------------------------------------------------------------- */
 /* line 1, ../../../scss/page/_about.scss */
 .about-content {
+  min-height: 799px;
   width: 100%;
 }
 /* line 5, ../../../scss/page/_about.scss */
@@ -717,7 +723,7 @@ body {
   width: 100%;
   height: 138px;
   background-color: white;
-  z-index: 500;
+  z-index: 600;
 }
 /* line 10, ../../../scss/modules/_shell.scss */
 .shellContainer .header-container {
@@ -780,4 +786,12 @@ body {
     -o-background-size: 64px, auto;
     background-size: 64px, auto;
   }
+}
+
+/* line 21, ../../../scss/modules/_about.scss */
+.disabled {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  cursor: default;
 }

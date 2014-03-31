@@ -17,3 +17,8 @@
 	left:50%;
 	margin-left: 400px;
 }
+
+.disabled{
+	@include alpha(0.5);
+	cursor:default;
+}

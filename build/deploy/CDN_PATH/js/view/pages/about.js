@@ -101,6 +101,17 @@ define([
             nexView.enter(this.getSign());
             this.currentView = nexView;
             this.previousIndex = this.model.getIndexTp();
+
+            if(this.model.getIndexTp() === 0){
+                this.$leftArrow.addClass('disabled');
+                this.$rightArrow.removeClass('disabled');
+            }else if(this.model.getIndexTp() === this.viewsList.length-1){
+                this.$leftArrow.removeClass('disabled');
+                this.$rightArrow.addClass('disabled');
+            }else{
+                this.$leftArrow.removeClass('disabled');
+                this.$rightArrow.removeClass('disabled');
+            }
         },
 
         getSign:function(){
