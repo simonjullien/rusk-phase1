@@ -30,12 +30,12 @@ define([
 
         enter:function(sign){
             TweenMax.set(this.$el,{x:sign*1000,opacity:0});
-            TweenMax.to(this.$el,1,{x:0, z:-1,opacity:1, delay:Math.random()*0.2, ease:Expo.easeInOut});
+            TweenMax.to(this.$el,1+Math.random()*0.3,{x:0, z:-1,opacity:1, ease:Expo.easeInOut});
         },
 
         out:function(sign){
             TweenMax.killTweensOf(this.$el);
-            TweenMax.to(this.$el,1,{x:-sign*1000, z:-1,opacity:0, delay:Math.random()*0.2, ease:Expo.easeInOut, onComplete:this.destroy});
+            TweenMax.to(this.$el,1+Math.random()*0.2,{x:-sign*1000, z:-1,opacity:0, ease:Expo.easeInOut, onComplete:this.destroy});
         },
 
         destroy:function(){
