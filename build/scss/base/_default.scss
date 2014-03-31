@@ -15,26 +15,29 @@ body {
 	min-height:100%;
 	padding:0;
 	margin:0;
+	//background-color: red;
 }
 
 .pageContainer {
 	position: relative;
 	width: 100%;
+	height: 100%;
 	top:$shellHeight;
 	background-color: $pageBgColor;
 }
 .contentContainer {
 	position: relative;
 	background-color: $pageBgColor;
+	//margin-top: $shellHeight;
 	height: 100%;
 }
 
 .site-footer{
 	position: relative;
 	height: $footerHeight;
-	position: relative;
 	z-index: $footerZindex;
-	background-color: white;
+	background-color: yellow;
+
 	//bottom: 0;
 }
 

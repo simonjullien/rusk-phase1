@@ -43,7 +43,7 @@ define([
         },
 
         initialize: function() {
-            _.bindAll(this,"onLeftClick","onRightClick");
+            _.bindAll(this,"onLeftClick","onRightClick","onKeyDown","destroy");
             var allNavigation = AppModel.getNavigationModel().getAllRoutes();
             this.compileAndAppendTemplate(Template,{'navigation':allNavigation});
 
@@ -69,15 +69,26 @@ define([
         },
 
         addEvents:function(){
+            $(window).on('keydown', this.onKeyDown);
             this.model.on('about:index:change', this.onAboutIndexChange, this);
             this.$leftArrow.on('click',this.onLeftClick);
             this.$rightArrow.on('click',this.onRightClick);
         },
 
         removeEvents:function(){
+            $(window).off('keydown', this.onKeyDown);
             this.model.off('about:index:change', this.onAboutIndexChange);
             this.$leftArrow.off('click',this.onLeftClick);
             this.$rightArrow.off('click',this.onRightClick);
+        },
+
+        onKeyDown:function(e){
+            e = e || window.event;
+            if (e.keyCode === 37) {
+                this.onLeftClick();
+            }else if (e.keyCode === 39) {
+                this.onRightClick();
+            }
         },
 
         onLeftClick:function(e){

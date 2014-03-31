@@ -3,13 +3,15 @@ define([
 	"underscore",
 	"backbone",
     "config",
-    "router"
+    "router",
+    "tweenmax"
 ], function (
 	$,
 	_,
 	Backbone,
     Config,
-    Router
+    Router,
+    TweenMax
 ) {
 	"use strict";
     return Backbone.View.extend({
@@ -17,7 +19,7 @@ define([
         $node:null,
 
         initialize: function () {
-
+            _.bindAll(this,"destroy");
         },
 
         render: function () {
@@ -40,11 +42,13 @@ define([
         },
 
         enter:function(){
-            
+            TweenMax.set(this.$node,{opacity:0});
+            TweenMax.to(this.$node, 1, {opacity:1, delay:0.5, ease:Expo.easeInOut});
         },
 
         out:function(){
-            this.destroy();
+            TweenMax.killTweensOf(this.$node);
+            TweenMax.to(this.$node, 1, {opacity:0, ease:Expo.easeInOut, onComplete:this.destroy});
         },
 
         destroy: function () {

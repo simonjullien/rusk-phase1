@@ -33,6 +33,7 @@ define([
         },
 
         initialize: function() {
+            _.bindAll(this,"destroy");
             var allNavigation = AppModel.getNavigationModel().getAllRoutes();
             this.compileAndAppendTemplate(Template,{'navigation':allNavigation});
 
