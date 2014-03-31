@@ -5,6 +5,7 @@ define([
     "config",
     "router",
     "handlebars",
+    "tweenmax",
     "util/utils",
     "model/app_model",
     "view/common/base_view",
@@ -17,6 +18,7 @@ define([
     Config,
     Router,
     Handlebars,
+    TweenMax,
     Utils,
     AppModel,
     BaseView,
@@ -32,6 +34,7 @@ define([
         viewsList:null,
 
         currentView:null,
+        previousIndex: -1,
         $leftArrow:null,
         $rightArrow:null,
 
@@ -91,12 +94,21 @@ define([
 
         onAboutIndexChange:function(){
             if(this.currentView){
-                this.currentView.destroy();
+                this.currentView.out(this.getSign());
             }
             var nexView = this.viewsList[this.model.getIndexTp()];
             this.$transitionNode.append(nexView.$el);
-            nexView.enter();
+            nexView.enter(this.getSign());
             this.currentView = nexView;
+            this.previousIndex = this.model.getIndexTp();
+        },
+
+        getSign:function(){
+            if(this.model.getIndexTp() > this.previousIndex){
+                return 1;
+            }else{
+                return -1;
+            }
         },
 
         prepareTp:function(template){

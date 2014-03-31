@@ -1,3 +1,18 @@
 .about-content{
 	//min-height:800px;
+	width: 100%;
+
+	.content-transition{
+		position: absolute;
+		height: 768px;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.sub-about{
+		position:absolute;
+		width:720px;
+		left: 50%;
+		margin-left: -350px;
+	}
 }

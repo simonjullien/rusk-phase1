@@ -2286,7 +2286,6 @@
 			_prefixCSS = "", //the non-camelCase vendor prefix like "-o-", "-moz-", "-ms-", or "-webkit-"
 			_prefix = "", //camelCase vendor prefix like "O", "ms", "Webkit", or "Moz".
 
-			//@private feed in a camelCase property name like "transform" and it will check to see if it is valid as-is or if it needs a vendor prefix. It returns the corrected camelCase property name (i.e. "WebkitTransform" or "MozTransform" or "transform" or null if no such property is found, like if the browser is IE8 or before, "transform" won't be found at all)
 			_checkPropPrefix = function(p, e) {
 				e = e || _tempDiv;
 				var s = e.style,
@@ -2381,7 +2380,6 @@
 				return t["offset" + dim] - (_convertToPixels(t, p, parseFloat(v), v.replace(_suffixExp, "")) || 0);
 			},
 
-			//@private returns at object containing ALL of the style properties in camelCase and their associated values.
 			_getAllStyles = function(t, cs) {
 				var s = {},
 					i, tr;

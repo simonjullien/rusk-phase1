@@ -27,6 +27,11 @@ body {
 	min-height: 100%;
 }
 
+.site-footer{
+	height: $footerHeight;
+	margin-top: $footerHeight;
+}
+
 /* ANCHORS & BUTTONS
 ---------------------------------------------------------------------- */
 

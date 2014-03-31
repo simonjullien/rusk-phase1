@@ -1,7 +1,3 @@
-/**
- * ...
- * @author emlyn@resn.co.nz
- */
 
 require.config({
 

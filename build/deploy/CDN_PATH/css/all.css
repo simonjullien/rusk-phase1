@@ -646,6 +646,12 @@ body {
   min-height: 100%;
 }
 
+/* line 30, ../../../scss/base/_default.scss */
+.site-footer {
+  height: 70px;
+  margin-top: 70px;
+}
+
 /* ANCHORS & BUTTONS
 ---------------------------------------------------------------------- */
 /* HEADINGS
@@ -670,6 +676,25 @@ body {
 
 /* VIEWS
 ---------------------------------------------------------------------- */
+/* line 1, ../../../scss/page/_about.scss */
+.about-content {
+  width: 100%;
+}
+/* line 5, ../../../scss/page/_about.scss */
+.about-content .content-transition {
+  position: absolute;
+  height: 768px;
+  width: 100%;
+  overflow: hidden;
+}
+/* line 12, ../../../scss/page/_about.scss */
+.about-content .sub-about {
+  position: absolute;
+  width: 720px;
+  left: 50%;
+  margin-left: -350px;
+}
+
 /* line 1, ../../../scss/page/_home.scss */
 .home-content {
   height: 400px;
@@ -685,26 +710,22 @@ body {
 }
 
 /* line 1, ../../../scss/modules/_shell.scss */
-.site-footer {
-  height: 70px;
-  background-color: white;
-}
-
-/* line 6, ../../../scss/modules/_shell.scss */
 .shellContainer {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 138px;
+  background-color: white;
+  z-index: 500;
 }
-/* line 13, ../../../scss/modules/_shell.scss */
+/* line 10, ../../../scss/modules/_shell.scss */
 .shellContainer .header-container {
   width: 100%;
   height: 50px;
   background-color: black;
 }
-/* line 19, ../../../scss/modules/_shell.scss */
+/* line 16, ../../../scss/modules/_shell.scss */
 .shellContainer .nav-container {
   width: 100%;
   height: 88px;
@@ -719,6 +740,10 @@ body {
   height: 64px;
   width: 64px;
   cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -460px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
   /* line 20, ../../../scss/utilities/_sprite.scss */
@@ -732,7 +757,7 @@ body {
   }
 }
 
-/* line 7, ../../../scss/modules/_about.scss */
+/* line 11, ../../../scss/modules/_about.scss */
 .right-arrow {
   background-image: url('/CDN_PATH/img/generated/sprites-s35229c7b44.png');
   background-position: 0 -76px;
@@ -740,6 +765,10 @@ body {
   height: 64px;
   width: 64px;
   cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 400px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
   /* line 20, ../../../scss/utilities/_sprite.scss */
@@ -751,9 +780,4 @@ body {
     -o-background-size: 64px, auto;
     background-size: 64px, auto;
   }
-}
-
-/* line 13, ../../../scss/modules/_about.scss */
-.content-transition {
-  text-align: center;
 }

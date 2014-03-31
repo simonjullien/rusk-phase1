@@ -2,15 +2,18 @@
 	@include sprite(left_arrow_about);
 	@extend %inline-block;
 	cursor:pointer;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-left: -460px;
 }
 
 .right-arrow{
 	@include sprite(right_arrow_about);
 	@extend %inline-block;
 	cursor:pointer;
-}
-
-.content-transition{
-	//position: absolute;
-	text-align: center;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-left: 400px;
 }
