@@ -5,7 +5,8 @@ define([
     "config",
     "handlebars",
     "view/common/base_view",
-    "view/common/transitioner"
+    "view/common/transitioner",
+    "view/modules/shell/shell"
 ], function (
     $,
     _,
@@ -13,7 +14,8 @@ define([
     Config,
     Handlebars,
     BaseView,
-    Transitioner
+    Transitioner,
+    Shell
 ) {
 
     "use strict";

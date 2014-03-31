@@ -1,0 +1,30 @@
+// https://gist.github.com/thulstrup/2140082#comment-378557
+
+@mixin sprite($name) {
+  @include retina-sprite($name, $sprites, $sprites-retina)
+}
+
+@mixin retina-sprite(
+  $name,
+  $sprites,
+  $sprites-retina
+) {
+  background-image: sprite-url($sprites);
+  $posx: nth(sprite-position($sprites, $name), 1);
+  $posy: nth(sprite-position($sprites, $name), 2);
+  background-position: $posx $posy;
+  background-repeat: no-repeat;
+  @include sprite-dimensions($sprites, $name);
+
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5){
+    & {
+      $posx: (nth(sprite-position($sprites-retina, $name), 1)) /2;
+      $posy: (nth(sprite-position($sprites-retina, $name), 2)) /2;
+      background-image: sprite-url($sprites-retina);
+      background-position: $posx $posy;
+      @include background-size(ceil(image-width($generated_sprites_folder + sprite-path($sprites-retina)) / 2), auto);
+    }
+  }
+}
+
+// [line 22} @include sprite-dimensions($sprites-retina, $name);

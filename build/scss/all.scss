@@ -8,8 +8,21 @@
 @import "base/fonts";
 @import "base/default";
 
+/* UTILITIES
+--------------------------------------------------------------------- */
+@import "utilities/inline-block";
+@import "utilities/ir";
+@import "utilities/sprite";
+
 /* VIEWS
 ---------------------------------------------------------------------- */
+@import "page/about";
+@import "page/contact";
+@import "page/home";
+@import "page/news";
+@import "page/products";
+@import "page/search";
 
 /* MODULES
 --------------------------------------------------------------------- */
+@import "modules/shell";

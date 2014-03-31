@@ -628,18 +628,10 @@ body {
   margin: 0;
 }
 
-/* line 20, ../../../scss/base/_default.scss */
-.test-btn {
-  width: 24px;
-  height: 24px;
-  background-color: red;
-}
-
 /* BASIC STICKY FOOTER SETUP
 ---------------------------------------------------------------------- */
-/* line 29, ../../../scss/base/_default.scss */
+/* line 23, ../../../scss/base/_default.scss */
 .pageContainer {
-  padding-bottom: 50px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -647,17 +639,10 @@ body {
   right: 0;
 }
 
-/* line 37, ../../../scss/base/_default.scss */
+/* line 30, ../../../scss/base/_default.scss */
 .contentContainer {
   min-height: 100%;
   position: relative;
-}
-
-/* line 42, ../../../scss/base/_default.scss */
-.footerContainer {
-  margin-bottom: -50px;
-  height: 50px;
-  background-color: #dddddd;
 }
 
 /* ANCHORS & BUTTONS
@@ -670,6 +655,8 @@ body {
 ---------------------------------------------------------------------- */
 /* FORM ELEMENTS
 ---------------------------------------------------------------------- */
+/* UTILITIES
+--------------------------------------------------------------------- */
 /* VIEWS
 ---------------------------------------------------------------------- */
 /* MODULES
